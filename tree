@@ -1,0 +1,137 @@
+delivery_app/
+│
+├── backend/
+│   ├── auth_service/
+│   │   ├── Dockerfile
+│   │   ├── src/
+│   │   │   ├── main.py
+│   │   │   ├── models.py
+│   │   │   ├── routes.py
+│   │   │   └── utils.py
+│   │   └── requirements.txt
+│   │
+│   ├── user_service/
+│   │   ├── Dockerfile
+│   │   ├── src/
+│   │   │   ├── main.py
+│   │   │   ├── models.py
+│   │   │   ├── routes.py
+│   │   │   └── utils.py
+│   │   └── requirements.txt
+│   │
+│   ├── product_service/
+│   │   ├── Dockerfile
+│   │   ├── src/
+│   │   │   ├── main.py
+│   │   │   ├── models.py
+│   │   │   ├── routes.py
+│   │   │   └── utils.py
+│   │   └── requirements.txt
+│   │
+│   ├── order_service/
+│   │   ├── Dockerfile
+│   │   ├── src/
+│   │   │   ├── main.py
+│   │   │   ├── models.py
+│   │   │   ├── routes.py
+│   │   │   └── utils.py
+│   │   └── requirements.txt
+│   │
+│   ├── delivery_service/
+│   │   ├── Dockerfile
+│   │   ├── src/
+│   │   │   ├── main.py
+│   │   │   ├── models.py
+│   │   │   ├── routes.py
+│   │   │   └── utils.py
+│   │   └── requirements.txt
+│   │
+│   ├── support_service/
+│   │   ├── Dockerfile
+│   │   ├── src/
+│   │   │   ├── main.py
+│   │   │   ├── models.py
+│   │   │   ├── routes.py
+│   │   │   └── utils.py
+│   │   └── requirements.txt
+│   │
+│   ├── messaging_service/
+│   │   ├── Dockerfile
+│   │   ├── src/
+│   │   │   ├── main.py
+│   │   │   ├── models.py
+│   │   │   ├── routes.py
+│   │   │   └── utils.py
+│   │   └── requirements.txt
+│   │
+│   ├── gateway/
+│   │   ├── Dockerfile
+│   │   ├── src/
+│   │   │   ├── main.py
+│   │   │   ├── routes.py
+│   │   │   └── utils.py
+│   │   └── requirements.txt
+│   │
+│   ├── database/
+│   │   ├── docker-compose.yml
+│   │   ├── postgres/
+│   │   │   ├── Dockerfile
+│   │   │   └── init.sql
+│   │   └── firestore/
+│   │       └── firestore_setup.py
+│   │
+│   ├── monitoring/
+│   │   ├── prometheus/
+│   │   │   └── config.yml
+│   │   └── grafana/
+│   │       └── (config files for Grafana)
+│   │
+│   ├── jenkins_home/  (persistent data for Jenkins)
+│   │
+│   └── docker-compose.yml
+│
+├── frontend/
+│   ├── lib/
+│   │   ├── main.dart
+│   │   ├── screens/
+│   │   │   ├── login_screen.dart
+│   │   │   ├── register_screen.dart
+│   │   │   ├── home_screen.dart
+│   │   │   ├── product_details_screen.dart
+│   │   │   ├── cart_screen.dart
+│   │   │   ├── order_confirmation_screen.dart
+│   │   │   ├── profile_screen.dart
+│   │   │   ├── tracking_screen.dart
+│   │   │   └── support_screen.dart
+│   │   ├── widgets/
+│   │   │   ├── product_card.dart
+│   │   │   ├── category_card.dart
+│   │   │   ├── cart_item.dart
+│   │   │   ├── order_item.dart
+│   │   │   ├── user_profile.dart
+│   │   │   ├── map_widget.dart
+│   │   │   └── ...
+│   │   ├── models/
+│   │   │   ├── user.dart
+│   │   │   ├── product.dart
+│   │   │   ├── order.dart
+│   │   │   └── ...
+│   │   ├── services/
+│   │   │   ├── auth_service.dart
+│   │   │   ├── product_service.dart
+│   │   │   ├── order_service.dart
+│   │   │   ├── location_service.dart
+│   │   │   └── ...
+│   │   ├── providers/
+│   │   │   ├── user_provider.dart
+│   │   │   ├── product_provider.dart
+│   │   │   ├── order_provider.dart
+│   │   │   └── ...
+│   │   └── utils/
+│   │       ├── constants.dart
+│   │       ├── utils.dart
+│   │       └── ...
+│   ├── pubspec.yaml
+│   └── ...
+│
+└── README.md
